@@ -379,7 +379,7 @@ header {
   max-width: 110rem;
 }
 .grid-section-bmi:hover{
-background: linear-gradient(to bottom,  rgb(57, 59, 65) 0%,rgb(52, 59, 76) 100%); 
+  background: linear-gradient(to bottom,  rgb(52, 52, 52) 0%,rgb(53, 53, 55) 100%); 
 }
 .table-chart tr,
 .table-chart td,
@@ -389,7 +389,9 @@ background: linear-gradient(to bottom,  rgb(57, 59, 65) 0%,rgb(52, 59, 76) 100%)
   border-collapse: collapse;
   padding: 1rem 1rem;
 }
-
+.table-chart{
+  width:90%;
+}
 .table-chart th {
   font-size: 1.8rem;
   text-align: start;
@@ -414,6 +416,7 @@ background: linear-gradient(to bottom,  rgba(125,126,125,1) 4%,rgba(14,14,14,1) 
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
+  width:90%;
 }
 
 .calculate-of-bmi h3 {
@@ -446,7 +449,7 @@ background: linear-gradient(to bottom,  rgba(125,126,125,1) 4%,rgba(14,14,14,1) 
   border: 1.5px solid rgba(79, 79, 79, 0.4);
   border-radius: 1.6rem;
   padding: 1.5rem;
-background: linear-gradient(to bottom,  rgb(117, 162, 206) 0%,rgb(52, 88, 125) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: linear-gradient(to bottom,  rgb(101, 103, 103) 0%,rgb(76, 76, 76) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 }
 .form-part {
@@ -467,8 +470,35 @@ form,select{
   border: 2px solid rgba(224, 123, 229, 0.6);
   opacity: 0.9;
   color: #65467a;
+  width:100%;
 }
-
+.btn-cal{
+  font-size: 1.7rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  border:2px solid rgb(118, 123, 125);
+  background: linear-gradient(
+    to bottom,
+    rgb(159, 160, 162) 34%,
+    rgb(55, 67, 93) 100%
+  ); 
+  color: #fff;
+}
+.btn-cal:hover,
+.btn-cal:active {
+  font-size: 1.7rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  border:2px solid rgb(118, 123, 125);
+  background: linear-gradient(
+    to bottom,
+    rgb(202, 203, 216) 34%,
+    rgb(105, 105, 105) 100%
+  ); 
+  color: #fff;
+}
 /*BMI PART END */
 /*  TEAM-trainer */
 .team-trainer {
@@ -757,7 +787,113 @@ form,select{
   border: 2px solid rgba(113, 111, 111, 0.2);
   /* max-width: 110rem; */
 }
-table{
-  width:100%
+.team-trainer {
+  padding:0 ;
+}
+/* .team-trainer-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+} */
+
+.team-trainer-head h3 {
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+} 
+
+.team-trainer-head p {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  color: rgb(182, 182, 182);
+  width: 55%;
+  text-align: center;
+}
+
+.team-trainer-images{
+  display: grid;
+  grid-template-rows: minmax(6rem, min-content); 
+  grid-template-columns: 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  padding: 1rem 1rem;
+  background-color: rgba(86, 85, 85, 0.2);
+  border-radius: 1.6rem;
+}
+
+.team-trainer-images img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 1.6rem;
+}
+.team-exp h5 {
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
+  margin-bottom:5px;
+}
+.team-exp span {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  color: rgb(209, 197, 197);
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
+}
+
+/* team trainer */
+/* footer start */
+.footer {
+  /* padding:5rem 11.5rem ; */
+  margin-top: 2rem;
+  background-color: rgba(60, 59, 59, 0.2);
+  border-radius: 1rem;
+  
+}
+
+.contents-of-foot {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* important */
+  column-gap: 1rem;
+  row-gap: 1.1rem;
+  padding: 4rem 2rem;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.footer-logo h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgb(230, 83, 60);
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  margin-top: -3rem;
+}
+
+.footer-logo p {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+}
+
+.nav-foot h5 {
+  font-size: 2.5rem;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+  margin-left:0rem;
+
+}
+
+.exm-nav{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: left;
+  align-items: flex-start;
 }
 }
