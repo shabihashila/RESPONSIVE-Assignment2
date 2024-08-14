@@ -611,7 +611,7 @@ form,select{
   font-size: 2.2rem;
   opacity: 0.8;
   margin-bottom: 1.5rem;
-  margin-left:3rem;
+  /* margin-left:3rem; */
 }
 
 .exm-nav{
@@ -646,6 +646,7 @@ form,select{
 .icon{
   display: none;
 }
+
 @media screen and (max-width:576px) {
   .navbar-list{
     display: none;
@@ -847,22 +848,24 @@ form,select{
 /* team trainer */
 /* footer start */
 .footer {
-  /* padding:5rem 11.5rem ; */
+  padding:0;
   margin-top: 2rem;
   background-color: rgba(60, 59, 59, 0.2);
   border-radius: 1rem;
-  
+
 }
 
 .contents-of-foot {
   display: grid;
-  grid-template-columns: 1fr;
-  /* important */
+  grid-template-columns: 1fr; 
+  /* important
+  display: flex;
+  flex-direction: column;*/
   column-gap: 1rem;
   row-gap: 1.1rem;
   padding: 4rem 2rem;
-  text-align: left;
-  align-items: flex-start;
+  justify-items: start;
+
 }
 
 .footer-logo h2 {
@@ -884,7 +887,8 @@ form,select{
   font-size: 2.5rem;
   opacity: 0.8;
   margin-bottom: 1.5rem;
-  margin-left:0rem;
+  text-align: left;
+  align-items: flex-start;
 
 }
 
@@ -895,5 +899,8 @@ form,select{
   gap: 1.2rem;
   text-align: left;
   align-items: flex-start;
+}
+.copyright p {
+ text-align: left;
 }
 }
