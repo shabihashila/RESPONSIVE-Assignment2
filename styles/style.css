@@ -602,16 +602,35 @@ select {
 
 /* team trainer */
 /* tooltip exceptional challange part */
-.challange{
+.challange {
   display: grid;
-  grid-template-columns:1.5fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   padding: 5rem 11.5rem;
-  
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
+
+.challange img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.challange-contents h1 {
+  margin-bottom: 1rem;
+  font-size: 2.8rem;
+}
+
+.challange-contents p {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  color: gray;
+}
+
 .social-buttons {
   display: flex;
   gap: 20px;
-  
 }
 
 .social-btn {
@@ -1020,5 +1039,27 @@ select {
 
   .copyright p {
     text-align: left;
+  }
+
+  .challange {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .challange img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .social-buttons {
+    margin-top: 1rem;
+  }
+
+  .challange-contents h1 {
+    margin-bottom: 1rem;
+  }
+
+  .challange-contents p {
+    margin-bottom: 2rem;
   }
 }
